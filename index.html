@@ -22,6 +22,17 @@
         </nav>
 </header>
 
+<div class="burger-nav">
+    <div class="burger-logo"><img src="images/W..png" height="28" width="45"/></div>
+    <button class="hamburger-button"> ☰ </button>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+
 <main>
     <section>
     <div class="haut"></div>
@@ -73,6 +84,12 @@
     </div>
 
 </footer>
+    <script>
+        document.querySelector('.hamburger-button').addEventListener('click', function() {
+            document.querySelector('.nav-links').style.display =
+                (document.querySelector('.nav-links').style.display == 'none') ? 'block' : 'none';
+        });
+    </script>
 </body>
 </html>
 
